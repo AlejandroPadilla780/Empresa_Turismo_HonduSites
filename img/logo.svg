@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Fondo azul con bordes redondeados -->
+  <rect width="200" height="200" rx="44" ry="44" fill="#185FA5"/>
+
+  <!-- Flecha blanca hacia arriba -->
+  <polygon points="100,38 148,100 122,100 122,155 78,155 78,100 52,100" fill="#ffffff"/>
+
+  <!-- Punto dorado -->
+  <circle cx="138" cy="52" r="16" fill="#EF9F27"/>
+</svg>
