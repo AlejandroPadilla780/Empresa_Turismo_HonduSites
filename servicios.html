@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — HonduSites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Fraunces:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_servicios.css">
+</head>
+<body>
+<div class="sitio">
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar__marca">
+      <img src="img/logo.svg" alt="HonduSites" class="logo">
+      <div class="marca-nombre">HonduSites</div>
+    </a>
+    <input type="checkbox" id="menu-toggle" class="menu-check">
+    <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-lista">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html" class="activo">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="reservar.html" class="btn-reservar">Reservar</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <h1 class="page-hero__titulo">Nuestros <em>Servicios</em></h1>
+    <p class="page-hero__desc">Paquetes todo incluido y servicios adicionales para que tu familia disfrute Honduras sin preocupaciones.</p>
+  </div>
+
+  <div class="seccion sec--azul">
+    <div class="sec__cabecera">
+      <div class="sec__label">Paquetes todo incluido</div>
+      <h2 class="sec__titulo">Escoge tu aventura</h2>
+      <p class="sec__subtitulo">Todos los paquetes incluyen alojamiento, traslados y guía certificado.</p>
+    </div>
+    <div class="grid-servicios">
+
+      <div class="paquete">
+        <span class="paquete__badge">⭐ Popular</span>
+        <div class="paquete__img-wrap">
+          <img src="img/islas.jpg" alt="Roatán" class="paquete__img">
+          <div class="paquete__placeholder" style="display:none;background:linear-gradient(135deg,#0077b6,#00b4d8);">🏝️</div>
+          <div class="paquete__overlay"><p class="paquete__overlay-texto">5 días · Todo incluido<br>Vuelo + hotel 4★ + snorkel<br>Salidas todos los viernes</p></div>
+        </div>
+        <div class="paquete__cuerpo">
+          <div class="paquete__categoria">Playa · 5 días</div>
+          <h3 class="paquete__titulo">Paraíso en Roatán</h3>
+          <p class="paquete__desc">Arrecifes de coral, aguas turquesas y playas de arena blanca. La experiencia caribeña perfecta para toda la familia.</p>
+          <ul class="paquete__incluye">
+            <li>Vuelo ida y vuelta desde Tegucigalpa</li>
+            <li>Hotel 4 estrellas frente al mar</li>
+            <li>Snorkel y paseo en catamarán</li>
+            <li>Desayunos y cenas incluidos</li>
+            <li>Traslados aeropuerto–hotel</li>
+          </ul>
+          <div class="paquete__pie">
+            <div>
+              <div class="paquete__precio-label">desde</div>
+              <div class="paquete__precio-monto">$299</div>
+              <div class="paquete__precio-pp">por persona</div>
+            </div>
+            <a href="reservar.html" class="tarjeta__enlace">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paquete">
+        <div class="paquete__img-wrap">
+          <img src="img/copan.jpg" alt="Copán Ruinas" class="paquete__img">
+          <div class="paquete__placeholder" style="display:none;background:linear-gradient(135deg,#4a7c59,#90be6d);">🏛️</div>
+          <div class="paquete__overlay"><p class="paquete__overlay-texto">4 días · Todo incluido<br>Transporte + hotel + tour guiado<br>Salidas los martes y sábados</p></div>
+        </div>
+        <div class="paquete__cuerpo">
+          <div class="paquete__categoria">Cultura · 4 días</div>
+          <h3 class="paquete__titulo">Maravillas de Copán</h3>
+          <p class="paquete__desc">Un viaje al corazón de la civilización maya con visitas guiadas a las ruinas, el Bosque Nuboso y artesanías locales.</p>
+          <ul class="paquete__incluye">
+            <li>Transporte terrestre desde Tegucigalpa</li>
+            <li>Hotel boutique en Copán</li>
+            <li>Tour guiado a las Ruinas Mayas</li>
+            <li>Alimentación completa</li>
+          </ul>
+          <div class="paquete__pie">
+            <div>
+              <div class="paquete__precio-label">desde</div>
+              <div class="paquete__precio-monto">$189</div>
+              <div class="paquete__precio-pp">por persona</div>
+            </div>
+            <a href="reservar.html" class="tarjeta__enlace">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paquete">
+        <div class="paquete__img-wrap">
+          <img src="img/tela.jpg" alt="Tela y Punta Sal" class="paquete__img">
+          <div class="paquete__placeholder" style="display:none;background:linear-gradient(135deg,#2d6a4f,#52b788);">🌿</div>
+          <div class="paquete__overlay"><p class="paquete__overlay-texto">3 días · Todo incluido<br>Transporte + eco-lodge + lancha<br>Salidas los jueves</p></div>
+        </div>
+        <div class="paquete__cuerpo">
+          <div class="paquete__categoria">Naturaleza · 3 días</div>
+          <h3 class="paquete__titulo">Tela & Punta Sal</h3>
+          <p class="paquete__desc">Explora la Reserva Natural de Punta Sal, observa manatíes, camina entre manglares y relájate en playas vírgenes.</p>
+          <ul class="paquete__incluye">
+            <li>Transporte y traslados incluidos</li>
+            <li>Alojamiento en eco-lodge</li>
+            <li>Recorrido en lancha por la reserva</li>
+            <li>Alimentación completa</li>
+          </ul>
+          <div class="paquete__pie">
+            <div>
+              <div class="paquete__precio-label">desde</div>
+              <div class="paquete__precio-monto">$159</div>
+              <div class="paquete__precio-pp">por persona</div>
+            </div>
+            <a href="reservar.html" class="tarjeta__enlace">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paquete">
+        <div class="paquete__img-wrap">
+          <img src="img/utila.jpg" alt="Utila" class="paquete__img">
+          <div class="paquete__placeholder" style="display:none;background:linear-gradient(135deg,#023e8a,#0096c7);">🐋</div>
+          <div class="paquete__overlay"><p class="paquete__overlay-texto">4 días · Todo incluido<br>Ferry + hostal + 2 inmersiones/día<br>Equipo de buceo completo</p></div>
+        </div>
+        <div class="paquete__cuerpo">
+          <div class="paquete__categoria">Aventura · 4 días</div>
+          <h3 class="paquete__titulo">Utila & Buceo</h3>
+          <p class="paquete__desc">La isla más accesible para bucear con tiburón ballena. Perfecta para jóvenes y adultos que buscan adrenalina.</p>
+          <ul class="paquete__incluye">
+            <li>Ferry y traslados incluidos</li>
+            <li>Hostal frente al mar</li>
+            <li>2 inmersiones diarias</li>
+            <li>Equipo de buceo completo</li>
+          </ul>
+          <div class="paquete__pie">
+            <div>
+              <div class="paquete__precio-label">desde</div>
+              <div class="paquete__precio-monto">$275</div>
+              <div class="paquete__precio-pp">por persona</div>
+            </div>
+            <a href="reservar.html" class="tarjeta__enlace">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paquete">
+        <div class="paquete__img-wrap">
+          <img src="img/mosquitia.jpg" alt="La Mosquitia" class="paquete__img">
+          <div class="paquete__placeholder" style="display:none;background:linear-gradient(135deg,#1b4332,#40916c);">🦜</div>
+          <div class="paquete__overlay"><p class="paquete__overlay-texto">5 días · Todo incluido<br>Vuelo + comunidad local + kayak<br>Guía bilingüe experto</p></div>
+        </div>
+        <div class="paquete__cuerpo">
+          <div class="paquete__categoria">Aventura · 5 días</div>
+          <h3 class="paquete__titulo">La Mosquitia</h3>
+          <p class="paquete__desc">La jungla más remota de Centroamérica. Ríos salvajes, fauna única y comunidades indígenas auténticas.</p>
+          <ul class="paquete__incluye">
+            <li>Vuelo a Palacios incluido</li>
+            <li>Alojamiento en comunidad local</li>
+            <li>Guía bilingüe certificado</li>
+            <li>Kayak y senderismo</li>
+          </ul>
+          <div class="paquete__pie">
+            <div>
+              <div class="paquete__precio-label">desde</div>
+              <div class="paquete__precio-monto">$349</div>
+              <div class="paquete__precio-pp">por persona</div>
+            </div>
+            <a href="reservar.html" class="tarjeta__enlace">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="paquete">
+        <div class="paquete__img-wrap">
+          <img src="img/valle.jpg" alt="Valle de Ángeles" class="paquete__img">
+          <div class="paquete__placeholder" style="display:none;background:linear-gradient(135deg,#7b2d8b,#ce93d8);">🦋</div>
+          <div class="paquete__overlay"><p class="paquete__overlay-texto">3 días · Todo incluido<br>Transporte + hotel colonial<br>Tour artesanal + gastronomía</p></div>
+        </div>
+        <div class="paquete__cuerpo">
+          <div class="paquete__categoria">Cultura · 3 días</div>
+          <h3 class="paquete__titulo">Valle de Ángeles</h3>
+          <p class="paquete__desc">Artesanías, aire fresco de montaña y gastronomía hondureña auténtica a minutos de Tegucigalpa.</p>
+          <ul class="paquete__incluye">
+            <li>Transporte desde Tegucigalpa</li>
+            <li>Hotel colonial en el centro</li>
+            <li>Tour de artesanías incluido</li>
+            <li>Degustación gastronómica</li>
+          </ul>
+          <div class="paquete__pie">
+            <div>
+              <div class="paquete__precio-label">desde</div>
+              <div class="paquete__precio-monto">$99</div>
+              <div class="paquete__precio-pp">por persona</div>
+            </div>
+            <a href="reservar.html" class="tarjeta__enlace">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="seccion sec--calido">
+    <div class="sec__cabecera">
+      <div class="sec__label">Servicios adicionales</div>
+      <h2 class="sec__titulo">Complementa tu viaje</h2>
+      <p class="sec__subtitulo">Agrega estos servicios a cualquier paquete para una experiencia aún más completa.</p>
+    </div>
+    <div class="grid-extras">
+
+      <div class="extra">
+        <div class="extra__icono">🚌</div>
+        <div class="extra__titulo">Transporte privado</div>
+        <div class="extra__desc">Vans y autobuses con A/C para grupos familiares y corporativos desde cualquier punto del país.</div>
+        <div class="extra__precio">desde $40 / trayecto</div>
+      </div>
+
+      <div class="extra">
+        <div class="extra__icono">📸</div>
+        <div class="extra__titulo">Fotografía del viaje</div>
+        <div class="extra__desc">Fotógrafo profesional que captura todos los momentos especiales de tu familia durante el recorrido.</div>
+        <div class="extra__precio">desde $80 / día</div>
+      </div>
+
+      <div class="extra">
+        <div class="extra__icono">🍽️</div>
+        <div class="extra__titulo">Cenas especiales</div>
+        <div class="extra__desc">Reservas en restaurantes locales con menú de cocina hondureña auténtica en destinos seleccionados.</div>
+        <div class="extra__precio">desde $25 / persona</div>
+      </div>
+
+      <div class="extra">
+        <div class="extra__icono">🧳</div>
+        <div class="extra__titulo">Paquetes a medida</div>
+        <div class="extra__desc">Diseñamos itinerarios completamente personalizados según tus fechas, presupuesto e intereses.</div>
+        <div class="extra__precio">Cotización gratis</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="seccion sec--oscuro sec-cta">
+    <h2 class="sec__titulo">¿Listo para reservar?</h2>
+    <p class="sec__subtitulo">Contáctanos y diseñamos el viaje perfecto para tu familia en Honduras.</p>
+    <div class="hero__botones">
+      <a href="reservar.html" class="btn btn--dorado">Reservar ahora</a>
+      <a href="galeria.html" class="btn btn--contorno">Ver galería</a>
+    </div>
+  </div>
+
+
+  <footer class="pie">
+    <div class="pie__grid">
+      <div>
+        <div class="pie__nombre">HonduSites</div>
+        <p class="pie__desc">Agencia de turismo familiar en Honduras.</p>
+      </div>
+      <div>
+        <div class="pie__col-titulo">Navegación</div>
+        <ul class="pie__enlaces">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="pie__col-titulo">Contacto</div>
+        <div class="pie__contacto">info@hondusites.hn</div>
+        <div class="pie__contacto">+504 2200-0000</div>
+        <div class="pie__contacto">Comayagua, HN</div>
+      </div>
+    </div>
+    <div class="pie__derechos">© 2026 HonduSites. Todos los derechos reservados.</div>
+  </footer>
+
+</div>
+</body>
+</html>
