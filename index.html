@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HonduSites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Fraunces:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sitio">
+  <nav class="navbar">
+    <a href="#" class="navbar__marca">
+      <img src="img/logo.svg" alt="HonduSites" class="logo">
+      <div class="marca-nombre">HonduSites</div>
+    </a>
+    <input type="checkbox" id="menu-toggle" class="menu-check">
+    <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-lista">
+      <li><a href="index.html" class="activo">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="reservar.html" class="btn-reservar">Reservar</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div class="hero__contenido">
+      <h1 class="hero__titulo">
+        Descubre la magia de<br>
+        <em>Honduras</em>
+      </h1>
+      <p class="hero__desc">
+        Paquetes diseñados para que tu familia viva experiencias únicas, desde Roatán hasta Copán.
+      </p>
+      <div class="hero__botones">
+        <a href="#paquetes" class="btn btn--primario">Ver paquetes</a>
+        <a href="#contacto" class="btn btn--contorno">Contáctanos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="barra-stats">
+    <div class="stat">
+      <div class="stat__num">+500</div>
+      <div class="stat__label">Familias felices</div>
+    </div>
+    <div class="stat">
+      <div class="stat__num">18</div>
+      <div class="stat__label">Destinos</div>
+    </div>
+    <div class="stat">
+      <div class="stat__num">12</div>
+      <div class="stat__label">Años de experiencia</div>
+    </div>
+    <div class="stat">
+      <div class="stat__num">100%</div>
+      <div class="stat__label">Todo incluido</div>
+    </div>
+  </div>
+
+  <div id="paquetes" class="seccion sec--azul">
+    <div class="sec__cabecera">
+      <div class="sec__label">Destinos populares</div>
+      <h2 class="sec__titulo">Los favoritos de nuestras familias</h2>
+      <p class="sec__subtitulo">Explora Honduras con guías expertos y paquetes que incluyen todo.</p>
+    </div>
+    <div class="grid-paquetes">
+
+      <div class="tarjeta">
+        <div class="tarjeta__img-wrap">
+          <img src="img/islas.jpg" alt="Islas de la Bahía" class="tarjeta__img">
+          <div class="tarjeta__overlay">
+            <p class="tarjeta__overlay-texto">
+              3 noches · Todo incluido<br>
+              Vuelo + hotel + snorkel<br>
+              Salidas todos los viernes
+            </p>
+          </div>
+        </div>
+        <div class="tarjeta__cuerpo">
+          <h3 class="tarjeta__titulo">Islas de la Bahía</h3>
+          <p class="tarjeta__desc">Roatán, Utila y Guanaja con arrecifes únicos y playas increíbles.</p>
+          <div class="tarjeta__pie">
+            <span class="tarjeta__precio">$299</span>
+            <a href="#" class="tarjeta__enlace">Ver paquete</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta__img-wrap">
+          <img src="img/copan.jpg" alt="Copán Ruinas" class="tarjeta__img">
+          <div class="tarjeta__overlay">
+            <p class="tarjeta__overlay-texto">
+              1 semana · Todo incluido<br>
+              Vuelo + hotel + tour <br>
+              Salidas todos los días
+            </p>
+          </div>
+        </div>
+        <div class="tarjeta__cuerpo">
+          <h3 class="tarjeta__titulo">Copán Ruinas</h3>
+          <p class="tarjeta__desc">Sumérgete en la civilización maya y sus templos milenarios.</p>
+          <div class="tarjeta__pie">
+            <span class="tarjeta__precio">$189</span>
+            <a href="#" class="tarjeta__enlace">Ver paquete</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div class="tarjeta__img-wrap">
+          <img src="img/tela.jpg" alt="Tela y Punta Sal" class="tarjeta__img">
+          <div class="tarjeta__overlay">
+            <p class="tarjeta__overlay-texto">
+              5 días · Todo incluido<br>
+              Vuelo + hotel + playa<br>
+              Disfruta de la costa caribeña
+            </p>
+          </div>
+        </div>
+        <div class="tarjeta__cuerpo">
+          <h3 class="tarjeta__titulo">Tela y Punta Sal</h3>
+          <p class="tarjeta__desc">Manglares, manatíes y playas vírgenes en el Caribe hondureño.</p>
+          <div class="tarjeta__pie">
+            <span class="tarjeta__precio">$159</span>
+            <a href="#" class="tarjeta__enlace">Ver paquete</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="servicios" class="seccion sec--calido">
+    <div class="sec__cabecera">
+      <div class="sec__label">Nuestra promesa</div>
+      <h2 class="sec__titulo">¿Por qué elegir HonduSites?</h2>
+    </div>
+    <div class="grid-beneficios">
+
+      <div class="beneficio">
+        <div class="beneficio__icono">✈️</div>
+        <h3 class="beneficio__titulo">Todo coordinado</h3>
+        <p class="beneficio__desc">Vuelos, traslados, hospedaje y tours organizados por nosotros.</p>
+      </div>
+
+      <div class="beneficio">
+        <div class="beneficio__icono">👨‍👩‍👧‍👦</div>
+        <h3 class="beneficio__titulo">Enfoque familiar</h3>
+        <p class="beneficio__desc">Actividades para todas las edades, creamos memorias juntos.</p>
+      </div>
+
+      <div class="beneficio">
+        <div class="beneficio__icono">💬</div>
+        <h3 class="beneficio__titulo">Soporte 24/7</h3>
+        <p class="beneficio__desc">Siempre disponibles para cualquier necesidad durante tu viaje.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="reservar" class="seccion sec--oscuro sec-cta">
+    <h2 class="sec__titulo">¿Listo para tu próxima aventura?</h2>
+    <p class="sec__subtitulo">Contáctanos y diseñamos el viaje perfecto para tu familia.</p>
+    <div class="hero__botones">
+      <a href="reservar.html" class="btn btn--dorado">Reservar ahora</a>
+      <a href="galeria.html" class="btn btn--contorno">Ver galería</a>
+    </div>
+  </div>
+
+  <footer id="contacto" class="pie">
+    <div class="pie__grid">
+      <div>
+        <div class="pie__nombre">HonduSites</div>
+        <p class="pie__desc">Agencia de turismo familiar en Honduras.</p>
+      </div>
+      <div>
+        <div class="pie__col-titulo">Navegación</div>
+        <ul class="pie__enlaces">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="pie__col-titulo">Contacto</div>
+        <div class="pie__contacto">info@hondusites.hn</div>
+        <div class="pie__contacto">+504 2200-0000</div>
+        <div class="pie__contacto">Comayagua, HN</div>
+      </div>
+    </div>
+    <div class="pie__derechos">© 2026 HonduSites. Todos los derechos reservados.</div>
+  </footer>
+
+</div>
+</body>
+</html>
