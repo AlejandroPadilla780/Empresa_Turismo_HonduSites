@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería — HonduSites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Fraunces:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_galeria.css">
+</head>
+<body>
+
+<div class="sitio">
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar__marca">
+      <img src="img/logo.svg" alt="HonduSites" class="logo">
+      <div class="marca-nombre">HonduSites</div>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-check">
+    <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-lista">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html" class="activo">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="reservar.html" class="btn-reservar">Reservar</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <h1 class="page-hero__titulo">Galería de <em>Destinos</em></h1>
+    <p class="page-hero__desc">Cada imagen es una invitación. Descubre la belleza natural y cultural de Honduras.</p>
+  </div>
+
+  <div class="seccion sec--azul">
+    <div class="sec__cabecera">
+      <div class="sec__label">Destinos Honduras</div>
+      <h2 class="sec__titulo">Lugares que te quitarán el aliento</h2>
+      <p class="sec__subtitulo">Pasa el cursor sobre cada imagen para conocer el destino.</p>
+      <p class="sec__label" style="font-size:13px; margin-top: 5px;">Categorías:</p>
+    </div>
+
+    <div class="filtros">
+      <div class="filtro">Playa</div>
+      <div class="filtro">Naturaleza</div>
+      <div class="filtro">Cultura</div>
+      <div class="filtro">Aventura</div>
+    </div>
+
+    <div class="grid-galeria">
+
+      <div class="gal-item">
+        <img src="img/roatan.jpg" alt="Roatán" class="gal-item__img">
+        <div class="gal-item__overlay">
+          <div class="gal-item__lugar">Roatán</div>
+          <div class="gal-item__dept">Islas de la Bahía</div>
+          <span class="gal-item__tag">Playa</span>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <img src="img/copan.jpg" alt="Copán Ruinas" class="gal-item__img">
+        <div class="gal-item__overlay">
+          <div class="gal-item__lugar">Copán Ruinas</div>
+          <div class="gal-item__dept">Copán, Honduras</div>
+          <span class="gal-item__tag">Cultura</span>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <img src="img/tela.jpg" alt="Tela" class="gal-item__img">
+        <div class="gal-item__overlay">
+          <div class="gal-item__lugar">Tela & Punta Sal</div>
+          <div class="gal-item__dept">Atlántida, Honduras</div>
+          <span class="gal-item__tag">Naturaleza</span>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <img src="img/utila.jpg" alt="Utila" class="gal-item__img">
+        <div class="gal-item__overlay">
+          <div class="gal-item__lugar">Utila</div>
+          <div class="gal-item__dept">Islas de la Bahía</div>
+          <span class="gal-item__tag">Aventura</span>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <img src="img/mosquitia.jpg" alt="La Mosquitia" class="gal-item__img">
+        <div class="gal-item__overlay">
+          <div class="gal-item__lugar">La Mosquitia</div>
+          <div class="gal-item__dept">Gracias a Dios</div>
+          <span class="gal-item__tag">Aventura</span>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <img src="img/valle.jpg" alt="Valle de Ángeles" class="gal-item__img">
+        <div class="gal-item__overlay">
+          <div class="gal-item__lugar">Valle de Ángeles</div>
+          <div class="gal-item__dept">Francisco Morazán</div>
+          <span class="gal-item__tag">Cultura</span>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <img src="img/ceiba.jpg" alt="La Ceiba" class="gal-item__img">
+        <div class="gal-item__overlay">
+          <div class="gal-item__lugar">La Ceiba</div>
+          <div class="gal-item__dept">Atlántida, Honduras</div>
+          <span class="gal-item__tag">Playa</span>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <img src="img/gracias.jpg" alt="Gracias" class="gal-item__img">
+        <div class="gal-item__overlay">
+          <div class="gal-item__lugar">Gracias</div>
+          <div class="gal-item__dept">Lempira, Honduras</div>
+          <span class="gal-item__tag">Cultura</span>
+        </div>
+      </div>
+
+      <div class="gal-item">
+        <img src="img/tigra.jpg" alt="La Tigra" class="gal-item__img">
+        <div class="gal-item__overlay">
+          <div class="gal-item__lugar">Parque La Tigra</div>
+          <div class="gal-item__dept">Francisco Morazán</div>
+          <span class="gal-item__tag">Naturaleza</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="seccion sec--oscuro sec-cta">
+    <h2 class="sec__titulo">¿Te inspiraste? ¡Reserva tu viaje!</h2>
+    <p class="sec__subtitulo">Nuestros asesores te ayudan a planificar el viaje perfecto para tu familia.</p>
+    <div class="hero__botones">
+      <a href="contacto.html" class="btn btn--dorado">Hablar con un asesor</a>
+      <a href="servicios.html" class="btn btn--contorno">Ver paquetes</a>
+    </div>
+  </div>
+
+  <footer id="contacto" class="pie">
+    <div class="pie__grid">
+      <div>
+        <div class="pie__nombre">HonduSites</div>
+        <p class="pie__desc">Agencia de turismo familiar en Honduras.</p>
+      </div>
+      <div>
+        <div class="pie__col-titulo">Navegación</div>
+        <ul class="pie__enlaces">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="pie__col-titulo">Contacto</div>
+        <div class="pie__contacto">info@hondusites.hn</div>
+        <div class="pie__contacto">+504 2200-0000</div>
+        <div class="pie__contacto">Comayagua, HN</div>
+      </div>
+    </div>
+    <div class="pie__derechos">© 2026 HonduSites. Todos los derechos reservados.</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
