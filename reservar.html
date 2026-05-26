@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservar — HonduSites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Fraunces:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_reservar.css">
+</head>
+<body>
+
+<div class="sitio">
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar__marca">
+      <img src="img/logo.svg" alt="HonduSites" class="logo">
+      <div class="marca-nombre">HonduSites</div>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-check">
+    <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-lista">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="reservar.html" class="btn-reservar activo">Reservar</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <h1 class="page-hero__titulo">Reserva tu <em>aventura</em></h1>
+    <p class="page-hero__desc">Completa el formulario y un asesor se pondrá en contacto contigo en menos de 24 horas.</p>
+  </div>
+
+  <div class="seccion sec--azul">
+    <div class="reservar-layout">
+
+      <div class="info-contacto">
+        <div>
+          <div class="sec__label">Estamos para ti</div>
+          <h2 class="info-titulo">Información de contacto</h2>
+          <p class="info-subtitulo">Puedes escribirnos, llamarnos o visitarnos. Respondemos en menos de 24 horas.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card__icono">📍</div>
+          <div>
+            <div class="info-card__titulo">Dirección</div>
+            <div class="info-card__texto">
+              Barrio Abajo<br>
+              Comayagua, Comayagua<br>
+              Honduras, C.A.
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card__icono">📞</div>
+          <div>
+            <div class="info-card__titulo">Teléfono y WhatsApp</div>
+            <div class="info-card__texto">
+              +504 2200-0000
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card__icono">📧</div>
+          <div>
+            <div class="info-card__titulo">Correo electrónico</div>
+            <div class="info-card__texto">
+              info@hondusites.hn<br>
+              reservas@hondusites.hn
+            </div>
+          </div>
+        </div>
+
+        <div class="info-horario">
+          <div class="info-horario__titulo">Horario de atención</div>
+          <div class="info-horario__fila">
+            <span>Lunes a viernes</span>
+            <span>8:00 am – 6:00 pm</span>
+          </div>
+          <div class="info-horario__fila">
+            <span>Sábados</span>
+            <span>9:00 am – 1:00 pm</span>
+          </div>
+          <div class="info-horario__fila">
+            <span>Domingos</span>
+            <span>Cerrado</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-card">
+        <h3 class="form-card__titulo">Solicita tu reserva</h3>
+        <p class="form-card__subtitulo">Cuéntanos qué destino te interesa y te diseñamos un paquete a la medida de tu familia.</p>
+
+        <form action="#" method="POST">
+
+          <div class="form-fila">
+            <div class="form-grupo">
+              <label for="nombre">Nombre completo <span class="requerido">*</span></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required />
+            </div>
+            <div class="form-grupo">
+              <label for="email">Correo electrónico <span class="requerido">*</span></label>
+              <input type="email" id="email" name="email" placeholder="juan@correo.com" required />
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="destino">Destino de interés <span class="requerido">*</span></label>
+            <select id="destino" name="destino" required>
+              <option value="" disabled selected>Selecciona un destino...</option>
+              <option value="roatan">Roatán — Islas de la Bahía</option>
+              <option value="copan">Copán Ruinas</option>
+              <option value="tela">Tela y Punta Sal</option>
+              <option value="utila">Utila — Buceo</option>
+              <option value="mosquitia">La Mosquitia</option>
+              <option value="valle">Valle de Ángeles</option>
+              <option value="ceiba">La Ceiba</option>
+              <option value="otro">Otro destino</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="fecha">Fecha preferida de viaje <span class="requerido">*</span></label>
+            <input type="date" id="fecha" name="fecha" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="mensaje">Mensaje o detalles adicionales</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cuántas personas viajan, si hay niños, tu presupuesto aproximado o cualquier detalle especial..."></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <label class="form-check">
+              <input type="checkbox" name="acepto" required />
+              Acepto que HonduSites me contacte para asesoría sobre mi reserva.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-enviar">✈️ Enviar solicitud de reserva</button>
+
+          <p class="form-nota">
+            <span>✓ Sin compromiso.</span> Te contactaremos para confirmar disponibilidad y precio final.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="seccion sec--oscuro sec-cta">
+    <h2 class="sec__titulo">¿Prefieres hablar directamente?</h2>
+    <p class="sec__subtitulo">Contáctanos por teléfono al <strong style="color:var(--dorado);">+504 2200-0000</strong> o escríbenos a <strong style="color:var(--dorado);">info@hondusites.hn</strong></p>
+  </div>
+
+  <footer class="pie">
+    <div class="pie__grid">
+      <div>
+        <div class="pie__nombre">HonduSites</div>
+        <p class="pie__desc">Agencia de turismo familiar en Honduras.</p>
+      </div>
+      <div>
+        <div class="pie__col-titulo">Navegación</div>
+        <ul class="pie__enlaces">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="pie__col-titulo">Contacto</div>
+        <div class="pie__contacto">info@hondusites.hn</div>
+        <div class="pie__contacto">+504 2200-0000</div>
+        <div class="pie__contacto">Comayagua, HN</div>
+      </div>
+    </div>
+    <div class="pie__derechos">© 2026 HonduSites. Todos los derechos reservados.</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
